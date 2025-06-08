@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  return <>daiwyo</>;
+  return <>sxva rame </>;
 }
 
 export default App;
