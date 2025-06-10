@@ -1,7 +1,8 @@
 import "./App.css";
+import AppRoutes from "./routes/app-routes";
 
 function App() {
-  return <>sxva rame </>;
+  return <AppRoutes />;
 }
 
 export default App;
