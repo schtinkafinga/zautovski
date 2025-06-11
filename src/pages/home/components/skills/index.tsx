@@ -56,8 +56,8 @@ const Skills: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="slider max-w-[800px] h-[120px] overflow-hidden mt-15">
-        <div className="list slider-track flex w-max animate-marquee h-[120px] relative">
+      <div className="slider max-w-[800px] h-[120px] overflow-hidden mt-5 ">
+        <div className="list slider-track flex w-max animate-marquee h-[120px] gap-6 relative">
           {[...items, ...items].map((item, index) => (
             <div
               key={index}
