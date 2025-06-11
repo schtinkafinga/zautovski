@@ -1,12 +1,19 @@
 import React from "react";
-import Hero from "./components/hero-section";
+import Hero from "./components/hero";
+import MyProjects from "./components/my-projects";
+import Skills from "./components/skills";
+import Info from "./components/info";
+import Contact from "./components/contact";
 
 const Home: React.FC = () => {
   return (
-    <div className=" absolute top-[70px] h-[100%] flex  w-full ">
+    <>
       <Hero />
-
-    </div>
+      <Info />
+      <MyProjects />
+      <Skills />
+      <Contact />
+    </>
   );
 };
 
