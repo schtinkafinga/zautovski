@@ -11,7 +11,7 @@ import {
 const Info: React.FC = () => {
   return (
     <div className="info-section flex flex-col items-center w-[80%] mt-[100px] ">
-      <h1 className="section-title text-[40px] font-bold">Hello, There 👋</h1>
+      <h1 className="section-title text-[40px] font-bold ">Hello, There 👋</h1>
       <div className="info-cards grid grid-cols-3  gap-[20px] w-full h-auto mt-[30px] ">
         {cardInfo?.map((card, index) => (
           <div

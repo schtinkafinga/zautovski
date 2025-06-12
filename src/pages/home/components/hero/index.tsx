@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
   return (
     <div className="hero flex relative w-full h-[100vh] items-center justify-between ">
       
-      <div className="hero-info absolute left-[5%] ">
+      <div className="hero-info autoBlur absolute left-[5%] ">
         <div className="hero-info-title rounded-[50px] flex justify-center items-center text-[#727fde] py-[8px] px-[5px] border border-[#727fde77] w-[250px] bg-[#2200493d] shadow-[0_0_5px_#727fde88]">
           <FontAwesomeIcon icon={faSketch} />
           Front-end Developer Portfolio
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
 
       <div className="hero-vid-box  absolute right-[0%] ">
         <video
-          className="h-[900px] mix-blend-lighten"
+          className="autoBlur h-[900px] mix-blend-lighten"
           autoPlay
           loop
           muted

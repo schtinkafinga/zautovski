@@ -15,7 +15,7 @@ export const cardVariants = cva(
 );
 //p
 export const cardDescriptionVariants = cva(
-  " absolute bottom-[13%] left-[5%] z-1 max-w-[300px] text-gray-400 text-[13px]  leading-[20px]  ",
+  " absolute bottom-[13%] left-[5%] z-1 max-w-[300px] text-gray-300 text-[13px]  leading-[20px]  ",
   {
     variants: {
       isThirdCard: {

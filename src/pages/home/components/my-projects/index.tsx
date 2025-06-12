@@ -26,10 +26,10 @@ const MyProjects: React.FC = () => {
           key={index}
           className="project-card flex w-[100%]   h-[40%]  items-center gap-[10%] justify-center "
         >
-          <div className="project-vidbox  flex justify-center items-center w-[40%] relative  cursor-pointer min-w-[400px] transition duration-500 mix-blend-exclusion">
+          <div className="project-vidbox autoBlur flex justify-center items-center w-[40%] relative  cursor-pointer min-w-[400px] transition duration-500 mix-blend-exclusion">
             <video
               id={card.video}
-              className="object-cover w-[100%]  h-[320px] shadow-[0_0_10px_lightgray] rounded-[20px] transition duration-500 hover:shadow-[0_0_20px_lightgray]"
+              className="object-cover  w-[100%]  h-[320px] shadow-[0_0_10px_lightgray] rounded-[20px] transition duration-500 hover:shadow-[0_0_20px_lightgray]"
               src={card.video}
               ref={(el) => {
                 videoRefs.current[index] = el!;
@@ -59,13 +59,17 @@ const MyProjects: React.FC = () => {
             <p className="w-[90%] max-w-[400px] min-w-[300px] mb-[50px] mt-[0]">
               {card.description}
             </p>
-            <button className="bx bx-link-external flex justify-center items-center gap-2 text-white py-[10px] px-[15px] rounded-[10px] border border-[#727fdeb4] bg-[#22004934] shadow-[0_0_5px_#727fde86] cursor-pointer transition duration-300 hover:shadow-[0_0_15px_#727fde86] hover:opacity-[0.7]">
+            <a
+              href={card.link}
+              target="_blank"
+              className="bx bx-link-external flex justify-center items-center gap-2 text-white py-[10px] px-[15px] rounded-[10px] border border-[#727fdeb4] bg-[#22004934] shadow-[0_0_5px_#727fde86] cursor-pointer transition duration-300 hover:shadow-[0_0_15px_#727fde86] hover:opacity-[0.7]"
+            >
               <FontAwesomeIcon
                 icon={faArrowUpRightFromSquare}
                 className="w-3 h-3"
               />
               Website
-            </button>
+            </a>
           </div>
         </div>
       ))}

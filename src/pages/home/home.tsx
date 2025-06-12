@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       <Info />
       <MyProjects />
       <Skills />
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 };
