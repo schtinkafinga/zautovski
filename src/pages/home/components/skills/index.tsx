@@ -19,14 +19,14 @@ const Skills: React.FC = () => {
 
   return (
     <div className="skills-section flex flex-col items-center relativ ">
-      <h1 className="section-title text-[40px] font-bold">My Skills 💪</h1>
+      <h1 className="section-title autoDisplay text-[40px] font-bold">My Skills 💪</h1>
       <div className="skills-box h-[90vh] relative flex items-start justify-center ">
         <img
           className="w-[70%] mix-blend-lighten opacity-[0.7]"
           src="images/digital brain (2).png"
           alt="skills-image"
         />
-        <div className="designer gap-10 absolute flex flex-col items-start  top-[25%] left-[5%] max-w-[300px]">
+        <div className="designer autoDisplay gap-10 absolute flex flex-col items-start  top-[25%] left-[5%] max-w-[300px]">
           <h1 className="gradient text-[50px]  flex items-center gap-3 justify-center">
             Designer
             <LaptopMinimal className="w-12 h-12 relative top-[3px] " />
@@ -39,7 +39,7 @@ const Skills: React.FC = () => {
             craft seamless and responsive user experiences.
           </p>
         </div>
-        <div className="coder gap-10 absolute flex flex-col items-start top-[25%] right-[5%] max-w-[300px]">
+        <div className="coder autoDisplay gap-10 absolute flex flex-col items-start top-[25%] right-[5%] max-w-[300px]">
           <h1 className="gradient text-[50px]  flex items-center gap-3 justify-center">
             Coder{" "}
             <FontAwesomeIcon

@@ -19,7 +19,7 @@ const MyProjects: React.FC = () => {
 
   return (
     <div className="my-projects flex flex-col  gap-30 items-center relative w-[80%] h-auto mt-[200px] mb-[300px] ">
-      <h1 className="section-title text-[40px] font-bold ">My Projects 👨‍💻</h1>
+      <h1 className="section-title autoDisplay text-[40px] font-bold ">My Projects 👨‍💻</h1>
 
       {cardData.map((card, index) => (
         <div
@@ -47,7 +47,7 @@ const MyProjects: React.FC = () => {
               className="hover-sign absolute flex justify-center items-center w-[30%] h-[100px] "
             ></div>
           </div>
-          <div className="project-info flex flex-col items-start justify-center w-[50%] pl-[10%]">
+          <div className="project-info fadeInRight flex flex-col items-start justify-center w-[50%] pl-[10%]">
             <h1
               className="w-[90%] text-[25px] font-700 text-nowrap mb-[10px] mt-[0] max-w-[450px] 
 "
