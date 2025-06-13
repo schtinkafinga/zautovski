@@ -19,14 +19,16 @@ const MyProjects: React.FC = () => {
 
   return (
     <div className="my-projects flex flex-col  gap-30 items-center relative w-[80%] h-auto mt-[200px] mb-[300px] ">
-      <h1 className="section-title autoDisplay text-[40px] font-bold ">My Projects 👨‍💻</h1>
+      <h1 className="section-title autoDisplay text-[40px] font-bold ">
+        My Projects 👨‍💻
+      </h1>
 
       {cardData.map((card, index) => (
         <div
           key={index}
           className="project-card flex w-[100%]   h-[40%]  items-center gap-[10%] justify-center "
         >
-          <div className="project-vidbox sm:autoBlur flex justify-center items-center w-[40%] relative  cursor-pointer min-w-[400px] transition duration-500 mix-blend-exclusion">
+          <div className="project-vidbox autoBlur flex justify-center items-center w-[40%] relative  cursor-pointer min-w-[400px] transition duration-500 mix-blend-exclusion">
             <video
               id={card.video}
               className="object-cover  w-[100%]  h-[320px] shadow-[0_0_10px_lightgray] rounded-[20px] transition duration-500 hover:shadow-[0_0_20px_lightgray]"

@@ -4,7 +4,7 @@ const BlackHole: React.FC = () => {
   return (
     <div className="blackhole-box z-[-1] absolute top-0 w-[100%] flex justify-center  mix-blend-lighten">
       <video
-        className="w-[100%] mt-[16%] sm:mt-[-24.9%] "
+        className="w-[100%] mt-[-24.9%] "
         loop
         autoPlay
         muted
