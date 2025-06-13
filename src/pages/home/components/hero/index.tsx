@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
           loop
           muted
           playsInline
-          src="/public/videos/hero-video.mp4"
+          src="videos/hero-video.mp4"
         ></video>
       </div>
 
