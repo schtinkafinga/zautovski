@@ -26,7 +26,7 @@ const MyProjects: React.FC = () => {
           key={index}
           className="project-card flex w-[100%]   h-[40%]  items-center gap-[10%] justify-center "
         >
-          <div className="project-vidbox autoBlur flex justify-center items-center w-[40%] relative  cursor-pointer min-w-[400px] transition duration-500 mix-blend-exclusion">
+          <div className="project-vidbox sm:autoBlur flex justify-center items-center w-[40%] relative  cursor-pointer min-w-[400px] transition duration-500 mix-blend-exclusion">
             <video
               id={card.video}
               className="object-cover  w-[100%]  h-[320px] shadow-[0_0_10px_lightgray] rounded-[20px] transition duration-500 hover:shadow-[0_0_20px_lightgray]"

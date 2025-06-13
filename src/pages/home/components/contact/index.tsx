@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
       <h1 className="section-title autoDisplay text-[40px] font-bold absolute top-[10%] left-[40%]">
         Contact Me 🤙
       </h1>
-      <div className="social-box autoBlur flex flex-col gap-[25px] ">
+      <div className="social-box sm:autoBlur flex flex-col gap-[25px] ">
         <a
           href="#"
           className="text-gray-300 decoration-none text-[20px] whitespace-nowrap flex items-center"
@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
           giorgi-zautashvili-9779a7215
         </a>
 
-        <div className="social-icons autoBlur flex gap-5">
+        <div className="social-icons sm:autoBlur flex gap-5">
           <a href="#">
             <FontAwesomeIcon
               icon={faSquareFacebook}
@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
         </div>
       </div>
 
-      <div className="contact-box autoBlur">
+      <div className="contact-box sm:autoBlur">
         <p className="max-w-[400px] mt-[30px] mb-[5px] ">
           If you're looking to build a new website, bring a unique project to
           file or improve your existing platform. i'm here to help

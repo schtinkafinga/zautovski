@@ -9,14 +9,13 @@ import animationScroll from "@/assets/animations/Scroll-Animation - 174949592744
 
 const Hero: React.FC = () => {
   return (
-    <div className="hero flex relative w-full h-[100vh] items-center justify-between ">
-      
-      <div className="hero-info autoBlur absolute left-[5%] ">
+    <div className="hero flex flex-col sm:flex-row relative w-full h-[100vh] items-center justify-between ">
+      <div className="hero-info sm:autoBlur absolute left-[5%] bottom-[5%] sm:bottom-[28%] ">
         <div className="hero-info-title rounded-[50px] flex justify-center items-center text-[#727fde] py-[8px] px-[5px] border border-[#727fde77] w-[250px] bg-[#2200493d] shadow-[0_0_5px_#727fde88]">
           <FontAwesomeIcon icon={faSketch} />
           Front-end Developer Portfolio
         </div>
-        <h1 className="text-[60px] max-w-[600px] font-[700] leading-[70px] mt-[40px] mb-[30px]">
+        <h1 className="text-[60px] max-w-[600px] font-[700] leading-[50px] sm:leading-[70px] mt-[40px] mb-[30px]">
           Providing <span className="gradient">the best</span> Project
           <span className="gradient"> Experience</span>
         </h1>
@@ -31,9 +30,9 @@ const Hero: React.FC = () => {
         </button>
       </div>
 
-      <div className="hero-vid-box  absolute right-[0%] ">
+      <div className="hero-vid-box h-[200px] sm:h-auto top-[5%] right-[5%]  absolute sm:top-[0] sm:right-[0%] ">
         <video
-          className="autoBlur h-[900px] mix-blend-lighten"
+          className="sm:autoBlur h-[900px] mix-blend-lighten"
           autoPlay
           loop
           muted
@@ -42,17 +41,13 @@ const Hero: React.FC = () => {
         ></video>
       </div>
 
-      <div className="scroll-down w-[30px]  h-[50px] absolute left-[49%] bottom-[8%] rounded-[50px] cursor-pointer shadow-[0_0_15px_rgba(211,211,211,0.477)]  border-2 border-[lightgray]">
+      <div className="scroll-down w-[30px]  h-[50px] absolute left-[49%] bottom-[5%] sm:bottom-[8%] rounded-[50px] cursor-pointer shadow-[0_0_15px_rgba(211,211,211,0.477)]  border-2 border-[lightgray]">
         <Lottie
           animationData={animationScroll}
           loop={true}
           className=" w-[70px] h-[70px]   absolute top-[-12px] left-[-22px]  "
         />
       </div>
-
-
-
-
     </div>
   );
 };
