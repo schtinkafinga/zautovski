@@ -10,7 +10,6 @@ import animationScroll from "@/assets/animations/Scroll-Animation - 174949592744
 const Hero: React.FC = () => {
   return (
     <div className="hero flex relative w-full h-[100vh] items-center justify-between ">
-      
       <div className="hero-info autoBlur absolute left-[5%] ">
         <div className="hero-info-title rounded-[50px] flex justify-center items-center text-[#727fde] py-[8px] px-[5px] border border-[#727fde77] w-[250px] bg-[#2200493d] shadow-[0_0_5px_#727fde88]">
           <FontAwesomeIcon icon={faSketch} />
@@ -38,7 +37,7 @@ const Hero: React.FC = () => {
           loop
           muted
           playsInline
-          src="/public/videos/hero-video.mp4"
+          src="videos/hero-video.mp4"
         ></video>
       </div>
 
@@ -49,10 +48,6 @@ const Hero: React.FC = () => {
           className=" w-[70px] h-[70px]   absolute top-[-12px] left-[-22px]  "
         />
       </div>
-
-
-
-
     </div>
   );
 };

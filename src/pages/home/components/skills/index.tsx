@@ -19,7 +19,9 @@ const Skills: React.FC = () => {
 
   return (
     <div className="skills-section flex flex-col items-center relativ ">
-      <h1 className="section-title autoDisplay text-[40px] font-bold">My Skills 💪</h1>
+      <h1 className="section-title autoDisplay text-[40px] font-bold">
+        My Skills 💪
+      </h1>
       <div className="skills-box h-[90vh] relative flex items-start justify-center ">
         <img
           className="w-[70%] mix-blend-lighten opacity-[0.7]"

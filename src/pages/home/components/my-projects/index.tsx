@@ -19,7 +19,9 @@ const MyProjects: React.FC = () => {
 
   return (
     <div className="my-projects flex flex-col  gap-30 items-center relative w-[80%] h-auto mt-[200px] mb-[300px] ">
-      <h1 className="section-title autoDisplay text-[40px] font-bold ">My Projects 👨‍💻</h1>
+      <h1 className="section-title autoDisplay text-[40px] font-bold ">
+        My Projects 👨‍💻
+      </h1>
 
       {cardData.map((card, index) => (
         <div

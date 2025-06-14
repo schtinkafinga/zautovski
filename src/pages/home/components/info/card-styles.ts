@@ -11,7 +11,7 @@ export const cardVariants = cva(
         true: "col-span-2 ",
       },
     },
-  }
+  },
 );
 //p
 export const cardDescriptionVariants = cva(
@@ -25,7 +25,7 @@ export const cardDescriptionVariants = cva(
         true: "max-w-[650px] ",
       },
     },
-  }
+  },
 );
 //h1
 export const cardTitleVariants = cva(
@@ -40,9 +40,7 @@ export const cardTitleVariants = cva(
       },
       default: {
         true: "bottom-[40%]",
-      }
+      },
     },
-  }
+  },
 );
-
-

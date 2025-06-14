@@ -11,7 +11,6 @@
   opacity: 0.8;
 }
 
-
 @keyframes hoverAnimation {
   0% {
     box-shadow: 0 0 5px lightgray;
@@ -24,6 +23,6 @@
   }
 }
 
-.hover-sign.active{
-    display: none;
+.hover-sign.active {
+  display: none;
 }
