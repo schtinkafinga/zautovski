@@ -12,13 +12,11 @@ html {
 }
 
 body {
-  display: flex;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: lightgray;
   background-color: #242424;
-  border:2px solid white;
 }
 /*Text Gradient Animation*/
 .gradient {
