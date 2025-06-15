@@ -18,17 +18,17 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <div className="skills-section flex flex-col items-center relativ ">
+    <div className="skills-section flex flex-col gap-12 sm:gap-0 items-center  relative  w-full ">
       <h1 className="section-title autoDisplay text-[40px] font-bold">
         My Skills 💪
       </h1>
-      <div className="skills-box h-[90vh] relative flex items-start justify-center ">
+      <div className="skills-box h-[90vh]  relative flex items-start justify-center ">
         <img
-          className="w-[70%] mix-blend-lighten opacity-[0.7]"
+          className="w-[70%] mix-blend-lighten opacity-[0.7] "
           src="images/digital brain (2).png"
           alt="skills-image"
         />
-        <div className="designer autoDisplay gap-10 absolute flex flex-col items-start  top-[25%] left-[5%] max-w-[300px]">
+        <div className="designer  autoDisplay  gap-10 absolute mt-15 sm:mt-0 flex flex-col items-start top-[15%] left-[18%]  sm:top-[25%]  sm:left-[5%] max-w-[300px]">
           <h1 className="gradient text-[50px]  flex items-center gap-3 justify-center">
             Designer
             <LaptopMinimal className="w-12 h-12 relative top-[3px] " />
@@ -41,8 +41,8 @@ const Skills: React.FC = () => {
             craft seamless and responsive user experiences.
           </p>
         </div>
-        <div className="coder autoDisplay gap-10 absolute flex flex-col items-start top-[25%] right-[5%] max-w-[300px]">
-          <h1 className="gradient text-[50px]  flex items-center gap-3 justify-center">
+        <div className="coder autoDisplay  gap-10 absolute flex flex-col mt-14 sm:mt-0 items-start top-[60%] left-[18%] sm:top-[25%] right-[5%] max-w-[300px]">
+          <h1 className="gradient text-[50px]   flex items-center gap-3 justify-center">
             Coder{" "}
             <FontAwesomeIcon
               icon={faCode}
@@ -58,7 +58,7 @@ const Skills: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="slider max-w-[800px] h-[120px] overflow-hidden mt-5 ">
+      <div className="slider sm:w-[800px] h-[120px] overflow-hidden mt-15 sm:mt-5 w-[200px]">
         <div className="list slider-track flex w-max animate-marquee h-[120px] gap-6 relative">
           {[...items, ...items].map((item, index) => (
             <div
