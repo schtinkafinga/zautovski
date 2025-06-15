@@ -41,7 +41,7 @@ const Skills: React.FC = () => {
             craft seamless and responsive user experiences.
           </p>
         </div>
-        <div className="coder autoDisplay  gap-10 absolute flex flex-col mt-14 sm:mt-0 items-start top-[60%] left-[18%] sm:top-[25%] right-[5%] max-w-[300px]">
+        <div className="coder autoDisplay  gap-10 absolute flex flex-col mt-14 sm:mt-0 items-start top-[60%]   right-[10.9%]  sm:right-[5%] sm:top-[25%]  max-w-[300px]">
           <h1 className="gradient text-[50px]   flex items-center gap-3 justify-center">
             Coder{" "}
             <FontAwesomeIcon

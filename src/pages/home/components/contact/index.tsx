@@ -30,11 +30,11 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="contact-section w-[80%] h-[100vh] flex justify-center gap-[10%] items-center relative">
-      <h1 className="section-title autoDisplay text-[40px] font-bold absolute top-[10%] left-[40%]">
+    <div className="contact-section   w-[80%] h-[100vh] flex justify-center gap-[10%] items-center relative">
+      <h1 className="section-title autoDisplay  text-[40px] font-bold absolute top-[10%] left-[40%]">
         Contact Me 🤙
       </h1>
-      <div className="social-box autoBlur flex flex-col gap-[25px] ">
+      <div className="social-box autoBlur flex  flex-col gap-[25px] ">
         <a
           href="#"
           className="text-gray-300 decoration-none text-[20px] whitespace-nowrap flex items-center"
