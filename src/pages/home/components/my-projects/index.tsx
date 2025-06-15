@@ -18,7 +18,7 @@ const MyProjects: React.FC = () => {
   };
 
   return (
-    <div className="my-projects flex flex-col  gap-30 items-center relative w-[80%] h-auto mt-[200px] mb-[300px] ">
+    <div className="my-projects flex flex-col  gap-30 items-center  relative w-[80%] h-auto mt-[200px] mb-[300px]  ">
       <h1 className="section-title autoDisplay text-[40px] font-bold ">
         My Projects 👨‍💻
       </h1>
@@ -26,12 +26,12 @@ const MyProjects: React.FC = () => {
       {cardData.map((card, index) => (
         <div
           key={index}
-          className="project-card flex w-[100%]   h-[40%]  items-center gap-[10%] justify-center "
+          className="project-card flex-col ml-0 sm:flex-row  sm:ml-[25%] gap-[30px]  flex w-[100%]   h-[40%]  items-center sm:gap-[10%] justify-center "
         >
-          <div className="project-vidbox autoBlur flex justify-center items-center w-[40%] relative  cursor-pointer min-w-[400px] transition duration-500 mix-blend-exclusion">
+          <div className="project-vidbox autoBlur   flex justify-center items-center w-[40%] relative  cursor-pointer min-w-[400px] transition duration-500 mix-blend-exclusion">
             <video
               id={card.video}
-              className="object-cover  w-[100%]  h-[320px] shadow-[0_0_10px_lightgray] rounded-[20px] transition duration-500 hover:shadow-[0_0_20px_lightgray]"
+              className="object-cover left-0 w-80 h-60  sm:w-[100%]  sm:h-[320px] shadow-[0_0_10px_lightgray] rounded-[20px] transition duration-500 hover:shadow-[0_0_20px_lightgray]"
               src={card.video}
               ref={(el) => {
                 videoRefs.current[index] = el!;
@@ -49,7 +49,7 @@ const MyProjects: React.FC = () => {
               className="hover-sign absolute flex justify-center items-center w-[30%] h-[100px] "
             ></div>
           </div>
-          <div className="project-info fadeInRight flex flex-col items-start justify-center w-[50%] pl-[10%]">
+          <div className="project-info w-[100%]    fadeInRight flex flex-col items-start justify-center sm:w-[50%] sm:pl-[10%]">
             <h1
               className="w-[90%] text-[25px] font-700 text-nowrap mb-[10px] mt-[0] max-w-[450px] 
 "

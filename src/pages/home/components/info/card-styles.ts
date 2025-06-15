@@ -5,7 +5,7 @@ export const cardVariants = cva(
   {
     variants: {
       isThirdCard: {
-        true: "row-span-2 h-[83vh]",
+        true: "col-span-2 sm:col-span-1 row-span-2 h-[70vh] sm:h-[83vh]",
       },
       isFourthCard: {
         true: "col-span-2 ",
@@ -19,7 +19,7 @@ export const cardDescriptionVariants = cva(
   {
     variants: {
       isThirdCard: {
-        true: "bottom-[14%]",
+        true: "bottom-[14%]  ",
       },
       isFourthCard: {
         true: "max-w-[650px] ",
@@ -29,17 +29,17 @@ export const cardDescriptionVariants = cva(
 );
 //h1
 export const cardTitleVariants = cva(
-  "absolute m-0   left-[5%] text-[25px] z-1 text-gray-200  ",
+  "absolute m-0  left-[5%]  sm:text-[25px]  z-1 text-gray-200 ",
   {
     variants: {
       isThirdCard: {
-        true: "bottom-[21%]",
+        true: "bottom-[21%] ",
       },
       isFourthCard: {
         true: "bottom-[35%]",
       },
       default: {
-        true: "bottom-[40%]",
+        true: "bottom-[48%] sm:bottom-[40%] ",
       },
     },
   },

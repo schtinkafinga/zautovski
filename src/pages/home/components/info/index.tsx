@@ -14,7 +14,7 @@ const Info: React.FC = () => {
       <h1 className="section-title autoDisplay text-[40px] font-bold ">
         Hello, There 👋
       </h1>
-      <div className="info-cards grid grid-cols-3  gap-[20px] w-full h-auto mt-[30px] ">
+      <div className="info-cards grid  grid-cols-2 sm:grid-cols-3 gap-[20px] w-full h-auto mt-[30px] ">
         {cardInfo?.map((card, index) => (
           <div
             className={cardVariants({
@@ -33,7 +33,7 @@ const Info: React.FC = () => {
 
             {card.video && (
               <video
-                className="mt-[10%] w-[70%] h-[50%] object-fit mix-blend-lighten  "
+                className="mt-[10%] w-100% sm:w-[70%] h-[50%] object-fit mix-blend-lighten  "
                 src={card.video}
                 autoPlay
                 loop
