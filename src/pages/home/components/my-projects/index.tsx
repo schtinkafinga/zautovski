@@ -1,71 +1,76 @@
+import React, { useRef } from "react";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useRef } from "react";
 import { cardData } from "./cardData";
 import "./my-projects-styles.css";
+
 const MyProjects: React.FC = () => {
   const videoRefs = useRef<HTMLVideoElement[]>([]);
   const hoverSignRefs = useRef<HTMLDivElement[]>([]);
 
-  const handleVideoHover = (index: number, state: string) => {
-    if (state === "leave") {
-      videoRefs.current[index]?.pause();
-      hoverSignRefs.current[index]?.classList.remove("active");
+  const handleVideoHover = (index: number, state: "enter" | "leave") => {
+    const video = videoRefs.current[index];
+    const hoverSign = hoverSignRefs.current[index];
+
+    if (!video || !hoverSign) return;
+
+    if (state === "enter") {
+      video.play();
+      hoverSign.classList.add("active");
     } else {
-      videoRefs.current[index]?.play();
-      hoverSignRefs.current[index]?.classList.add("active");
+      video.pause();
+      hoverSign.classList.remove("active");
     }
   };
 
   return (
-
-    <div className="my-projects flex flex-col  gap-30 items-center  relative w-[80%] h-auto mt-[200px] mb-[300px]  ">
-      <h1 className="section-title autoDisplay text-[40px] font-bold ">
+    <section className="my-projects relative flex flex-col  items-center w-[80%] mt-[150px] gap-[90px] ">
+      <h1 className="section-title autoDisplay text-[40px] font-bold">
         My Projects 👨‍💻
       </h1>
 
       {cardData.map((card, index) => (
         <div
           key={index}
-          className="project-card flex-col ml-0 sm:flex-row  sm:ml-[25%] gap-[30px]  flex w-[100%]   h-[40%]  items-center sm:gap-[10%] justify-center "
+          className="project-card flex flex-col  sm:flex-row items-center  justify-center w-full  gap-[30px] sm:gap-[10%] "
         >
-          <div className="project-vidbox autoBlur   flex justify-center items-center w-[40%] relative  cursor-pointer min-w-[400px] transition duration-500 mix-blend-exclusion">
+          {/* Video Box */}
+          <div className="project-vidbox autoBlur relative flex justify-center items-center min-w-[400px] w-[40%] cursor-pointer mix-blend-exclusion transition duration-500">
             <video
-              id={card.video}
-              className="object-cover left-0 w-80 h-60  sm:w-[100%]  sm:h-[320px] shadow-[0_0_10px_lightgray] rounded-[20px] transition duration-500 hover:shadow-[0_0_20px_lightgray]"
-              src={card.video}
               ref={(el) => {
                 videoRefs.current[index] = el!;
               }}
-              onMouseEnter={() => handleVideoHover(index, "enter")}
-              onMouseLeave={() => handleVideoHover(index, "leave")}
+              src={card.video}
               loop
               muted
               playsInline
-            ></video>
+              onMouseEnter={() => handleVideoHover(index, "enter")}
+              onMouseLeave={() => handleVideoHover(index, "leave")}
+              className="w-80 h-60 sm:w-full sm:h-[320px] object-cover rounded-[20px] shadow-[0_0_10px_lightgray] hover:shadow-[0_0_20px_lightgray] transition duration-500"
+            />
             <div
               ref={(el) => {
                 hoverSignRefs.current[index] = el!;
               }}
-              className="hover-sign absolute flex justify-center items-center w-[30%] h-[100px] "
+              className="hover-sign absolute flex justify-center items-center w-[30%] h-[100px]"
             ></div>
           </div>
-          <div className="project-info w-[100%]    fadeInRight flex flex-col items-start justify-center sm:w-[50%] sm:pl-[10%]">
-            <h1
-              className="w-[90%] text-[25px] font-700 text-nowrap mb-[10px] mt-[0] max-w-[450px] 
-"
-            >
+
+          {/* Info Box */}
+          <div className="project-info fadeInRight flex flex-col items-start justify-center w-full sm:w-[50%] sm:pl-[10%]">
+            <h1 className="text-[25px] font-bold w-[90%] mb-[10px] max-w-[450px] text-nowrap">
               {card.titleSection1}
               <span className="gradient"> {card.titleSection2} </span>
               {card.titleSection3}
             </h1>
-            <p className="w-[90%] max-w-[400px] min-w-[300px] mb-[50px] mt-[0]">
+            <p className="w-[90%] max-w-[400px] min-w-[300px] mb-[50px]">
               {card.description}
             </p>
             <a
               href={card.link}
               target="_blank"
-              className="bx bx-link-external flex justify-center items-center gap-2 text-white py-[10px] px-[15px] rounded-[10px] border border-[#727fdeb4] bg-[#22004934] shadow-[0_0_5px_#727fde86] cursor-pointer transition duration-300 hover:shadow-[0_0_15px_#727fde86] hover:opacity-[0.7]"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-white py-[10px] px-[15px] border border-[#727fdeb4] bg-[#22004934] rounded-[10px] shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86] hover:opacity-[0.7]"
             >
               <FontAwesomeIcon
                 icon={faArrowUpRightFromSquare}
@@ -76,7 +81,7 @@ const MyProjects: React.FC = () => {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

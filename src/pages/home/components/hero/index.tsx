@@ -1,40 +1,42 @@
+import React from "react";
 import { faSketch } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import { SendHorizontal } from "lucide-react";
-import "./hero-styles.css";
-
 import Lottie from "lottie-react";
+
 import animationScroll from "@/assets/animations/Scroll-Animation - 1749495927443.json";
+import "./hero-styles.css";
 
 const Hero: React.FC = () => {
   return (
-
-    <div className="hero flex     relative w-full h-[100vh]  ">
-      <div className="hero-info  autoBlur  bottom-[2%]   md:bottom-[45%] md:left-[5%]   absolute left-[9%]    ">
-        <div className="hero-info-title rounded-[50px] gap-1 flex justify-center items-center text-[#727fde] py-[8px] px-[5px] border border-[#727fde77] w-[250px] bg-[#2200493d] shadow-[0_0_5px_#727fde88]">
+    <section className="hero relative w-full h-[100vh] flex ">
+      {/* Hero Info */}
+      <div className="hero-info autoBlur absolute bottom-[2%] left-[9%] md:bottom-[45%] md:left-[5%]">
+        <div className="hero-info-title w-[250px] flex items-center justify-center gap-1 rounded-[50px] border border-[#727fde77] bg-[#2200493d] py-2 px-2 text-[#727fde] shadow-[0_0_5px_#727fde88]">
           <FontAwesomeIcon icon={faSketch} />
           Front-end Developer Portfolio
         </div>
-        <h1 className="text-[35px] sm:text-[60px]  max-w-[600px] font-[700] leading-[50px] sm:leading-[70px] mt-[20px] sm:mt-[40px] mb-[30px]">
-          Providing <span className="gradient">the best</span> Project
-          <span className="gradient"> Experience</span>
+
+        <h1 className="mt-5 mb-[30px] text-[35px] sm:text-[60px] font-bold leading-[50px] sm:leading-[70px] max-w-[600px]">
+          Providing <span className="gradient">the best</span> Project{" "}
+          <span className="gradient">Experience</span>
         </h1>
-        <p className="max-w-[550px] leading-[25px] mb-[40px] text-[20px]">
-          I'm a Front-end developer with Experience in website,Mobile and
-          Software development. Check out my skills.
+
+        <p className="mb-10 max-w-[550px] text-[20px] leading-[25px] ">
+          I'm a Front-end developer with experience in website, mobile, and
+          software development. Check out my skills.
         </p>
 
-        <button className="text-white  flex items-center transition duration-300 justify-center gap-2 py-[15px] px-[35px]  rounded-[10px] bg-[#2200493d] border-[#727fdeb4] shadow-[0_0_5px_#727fde86] cursor-pointer hover:shadow-[0_0_15px_#727fde86] ">
-          <SendHorizontal className="w-4 h-4 " />
+        <button className="flex items-center justify-center gap-2 rounded-[10px] border border-[#727fdeb4] bg-[#2200493d] px-[35px] py-[15px] text-white shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86]">
+          <SendHorizontal className="w-4 h-4" />
           Contact Me
         </button>
       </div>
 
-
-      <div className="hero-vid-box bottom-[48%]   sm:bottom-[16%] absolute right-[0%] pl-4 sm:pl-0 ">
+      {/* Hero Video */}
+      <div className="hero-vid-box absolute right-0 bottom-[48%] sm:bottom-[16%] pl-4 sm:pl-0">
         <video
-          className="autoBlur max-h-[900px] mix-blend-lighten "
+          className="autoBlur max-h-[900px] mix-blend-lighten"
           autoPlay
           loop
           muted
@@ -43,14 +45,15 @@ const Hero: React.FC = () => {
         ></video>
       </div>
 
-      <div className="scroll-down w-[30px]   h-[50px] absolute left-[58%] sm:left-[49%] bottom-[2.2%]  sm:bottom-[28%] rounded-[50px] cursor-pointer shadow-[0_0_15px_rgba(211,211,211,0.477)]  border-2 border-[lightgray]">
+      {/* Scroll Indicator */}
+      <div className="scroll-down absolute left-[58%] sm:left-[49%] bottom-[2.2%] sm:bottom-[28%] h-[50px] w-[30px] rounded-[50px] border-2 border-[lightgray] shadow-[0_0_15px_rgba(211,211,211,0.477)] cursor-pointer">
         <Lottie
           animationData={animationScroll}
-          loop={true}
-          className=" w-[70px] h-[70px]   absolute top-[-12px] left-[-22px]  "
+          loop
+          className="absolute top-[-12px] left-[-22px] w-[70px] h-[70px]"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

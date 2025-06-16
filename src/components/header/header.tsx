@@ -7,60 +7,65 @@ import {
   faSquareGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
+const socialLinks = [
+  {
+    href: "https://github.com/giozauta",
+    icon: faSquareGithub,
+  },
+  {
+    href: "https://www.linkedin.com/in/giorgi-zautashvili-9779a7215",
+    icon: faLinkedin,
+  },
+  {
+    href: "https://www.facebook.com/zautagio",
+    icon: faSquareFacebook,
+  },
+];
+
 const Header: React.FC = () => {
   return (
-    <div className="header-box  sticky flex w-[100%] h-[70px] top-0 left-0 right-0 items-center justify-between  bg-[rgba(255,255,255,0.113)] backdrop-blur-[10px] px-[30px] py-0 shadow-[0_0_15px_#72a1de68] z-[999] ">
-      <div className="left flex items-center justify-center  h-full">
+    <header className="sticky top-0 left-0 right-0 z-[999] w-full h-[70px] px-[30px] bg-[rgba(255,255,255,0.113)] backdrop-blur-[10px] shadow-[0_0_15px_#72a1de68] flex items-center justify-between">
+      {/* Logo + Name */}
+      <div className="flex items-center h-full">
         <img
           src="images/man.png"
           alt="logo"
-          className="w-[35px]  h-[35px] mr-2"
+          className="w-[35px] h-[35px] mr-2"
         />
         <h1 className="text-xl font-bold text-white">
           <span className="text-[#727fde]">Giorgi</span> Zautashvili
         </h1>
       </div>
 
-
-      <ul className="hidden md:flex justify-between items-center lg:w-[30%] py-[15px] px-[15px] rounded-[50px] bg-[rgba(0,0,69,0.30)] backdrop-blur-[10px] shadow-[0_0_15px_#727fde65]">
-        <li className="list-none">
-          <Link className="no-underline text-white font-bold mx-[10px]" to="#">
-            About
-          </Link>
-        </li>
-        <li className="list-none">
-          <Link className="no-underline text-white font-bold mx-[10px]" to="#">
-            Skills
-          </Link>
-        </li>
-        <li className="list-none">
-          <Link className="no-underline text-white font-bold mx-[10px]" to="#">
-            Projects
-          </Link>
-        </li>
+      {/* Navigation Links */}
+      <ul className="hidden md:flex items-center justify-between bg-[rgba(0,0,69,0.30)] backdrop-blur-[10px] shadow-[0_0_15px_#727fde65] rounded-[50px] py-[15px] px-[15px] lg:w-[30%]">
+        {["About", "Skills", "Projects"].map((label, index) => (
+          <li key={index}>
+            <Link
+              to="#"
+              className="mx-[10px] font-bold text-white no-underline"
+            >
+              {label}
+            </Link>
+          </li>
+        ))}
       </ul>
 
-      <div className="box-icons hidden md:flex gap-[40px]">
-        <a
-          href="https://github.com/giozauta"
-          className="flex justify-center items-center text-[20px] w-[30px] h-[30px] border-2 border-[#727fde] no-underline color-lightgray rounded-[50%] transition duration-300 hover:bg-[#727fde] hover:text-black shadow-[0_0_15px_#727fde6f]"
-        >
-          <FontAwesomeIcon icon={faSquareGithub} className="w-4 " />
-        </a>
-        <a
-          href="www.linkedin.com/in/giorgi-zautashvili-9779a7215"
-          className="flex justify-center items-center text-[20px] w-[30px] h-[30px] border-2 border-[#727fde] no-underline color-lightgray rounded-[50%] transition duration-300 hover:bg-[#727fde] hover:text-black shadow-[0_0_15px_#727fde6f]"
-        >
-          <FontAwesomeIcon icon={faLinkedin} className="w-4" />
-        </a>
-        <a
-          href="https://www.facebook.com/zautagio"
-          className="flex justify-center items-center text-[20px] w-[30px] h-[30px] border-2 border-[#727fde] no-underline color-lightgray rounded-[50%] transition duration-300 hover:bg-[#727fde] hover:text-black shadow-[0_0_15px_#727fde6f]"
-        >
-          <FontAwesomeIcon icon={faSquareFacebook} className="w-4 " />
-        </a>
+      {/* Social Icons */}
+      <div className="hidden md:flex gap-[40px]">
+        {socialLinks.map(({ href, icon }, idx) => (
+          <a
+            key={idx}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-[30px] h-[30px] flex items-center justify-center rounded-full border-2 border-[#727fde] text-[20px] text-lightgray no-underline transition duration-300 hover:bg-[#727fde] hover:text-black shadow-[0_0_15px_#727fde6f]"
+          >
+            <FontAwesomeIcon icon={icon} className="w-4" />
+          </a>
+        ))}
       </div>
-    </div>
+    </header>
   );
 };
 
