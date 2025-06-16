@@ -11,8 +11,10 @@ import {
 const Info: React.FC = () => {
   return (
     <div className="info-section flex flex-col items-center w-[80%] mt-[100px] ">
-      <h1 className="section-title autoDisplay text-[40px] font-bold ">Hello, There 👋</h1>
-      <div className="info-cards grid grid-cols-3  gap-[20px] w-full h-auto mt-[30px] ">
+      <h1 className="section-title autoDisplay text-[40px] font-bold ">
+        Hello, There 👋
+      </h1>
+      <div className="info-cards grid  grid-cols-2 sm:grid-cols-3 gap-[20px] w-full h-auto mt-[30px] ">
         {cardInfo?.map((card, index) => (
           <div
             className={cardVariants({
@@ -31,7 +33,7 @@ const Info: React.FC = () => {
 
             {card.video && (
               <video
-                className="mt-[10%] w-[70%] h-[50%] object-fit mix-blend-lighten  "
+                className="mt-[10%] w-100% sm:w-[70%] h-[50%] object-fit mix-blend-lighten  "
                 src={card.video}
                 autoPlay
                 loop
@@ -57,7 +59,10 @@ const Info: React.FC = () => {
             </p>
             {index === 2 && (
               <button className="text-white py-[5px] px-[15px] border rounded-[10px] border-[#727fdeb4] bg-[#2200493d]  shadow-[0_0_5px_#727fde86]  cursor-pointer transition duration-300   absolute bottom-[5%] left-[5%]  flex justify-center items-center gap-1     hover:shadow-[0_0_15px_#727fde86] hover:opacity-[0.7]">
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="w-[12px] h-[12px]" />
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                  className="w-[12px] h-[12px]"
+                />
                 Contact Me
               </button>
             )}

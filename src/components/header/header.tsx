@@ -21,7 +21,8 @@ const Header: React.FC = () => {
         </h1>
       </div>
 
-      <ul className="flex  justify-between w-[30%] py-[15px] px-[15px] rounded-[50px] bg-[rgba(0,0,69,0.30)] backdrop-blur-[10px] shadow-[0_0_15px_#727fde65]">
+
+      <ul className="hidden md:flex justify-between items-center lg:w-[30%] py-[15px] px-[15px] rounded-[50px] bg-[rgba(0,0,69,0.30)] backdrop-blur-[10px] shadow-[0_0_15px_#727fde65]">
         <li className="list-none">
           <Link className="no-underline text-white font-bold mx-[10px]" to="#">
             About
@@ -39,7 +40,7 @@ const Header: React.FC = () => {
         </li>
       </ul>
 
-      <div className="box-icons flex gap-[40px]">
+      <div className="box-icons hidden md:flex gap-[40px]">
         <a
           href="https://github.com/giozauta"
           className="flex justify-center items-center text-[20px] w-[30px] h-[30px] border-2 border-[#727fde] no-underline color-lightgray rounded-[50%] transition duration-300 hover:bg-[#727fde] hover:text-black shadow-[0_0_15px_#727fde6f]"

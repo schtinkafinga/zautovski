@@ -12,13 +12,11 @@ html {
 }
 
 body {
-  display: flex;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: lightgray;
   background-color: #242424;
-  border:2px solid white;
 }
 /*Text Gradient Animation*/
 .gradient {
@@ -46,10 +44,13 @@ body {
 }
 
 /*Auto Blur Animation*/
+@media (min-width: 700px) {
 .autoBlur {
   animation: autoBlurAnimation linear both;
   animation-timeline: view();
 }
+}
+
 
 @keyframes autoBlurAnimation {
   0% {
@@ -67,21 +68,28 @@ body {
 }
 
 /*Auto Display Animation*/
-.autoDisplay {
-  animation: autoDisplayAnimation both;
-  animation-timeline: view();
-}
-
-@keyframes autoDisplayAnimation {
-  from {
-    filter: blur(10px);
-    transform: translateY(-200px) scale(0);
-    opacity: 0.2;
+@media (min-width: 700px) {
+  .autoDisplay {
+    animation: autoDisplayAnimation both;
+    animation-timeline: view();
   }
-  50% {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0) scale(1);
+
+  @keyframes autoDisplayAnimation {
+    from {
+      filter: blur(10px);
+      transform: translateY(-200px) scale(0);
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0) scale(1);
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0) scale(1);
+    }
   }
 }
 

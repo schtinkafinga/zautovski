@@ -21,7 +21,8 @@ Upload an order, create unique wall designs in seconds with AI/AR assistance, re
     titleSection1: "Modern",
     titleSection2: "Portfolio",
     titleSection3: "Website",
-    description: "My Portfolio – a showcase of creativity and code. Explore modern UI design, responsive layouts, and full-stack projects built with React, Tailwind, and cutting-edge tools. Each project reflects my passion for user experience and clean development.",
+    description:
+      "My Portfolio – a showcase of creativity and code. Explore modern UI design, responsive layouts, and full-stack projects built with React, Tailwind, and cutting-edge tools. Each project reflects my passion for user experience and clean development.",
     video: "videos/project3.mp4",
     link: "https://github.com/",
   },
