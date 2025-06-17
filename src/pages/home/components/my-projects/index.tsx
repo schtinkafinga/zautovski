@@ -24,18 +24,18 @@ const MyProjects: React.FC = () => {
   };
 
   return (
-    <section className="my-projects relative flex flex-col  items-center w-[80%] mt-[150px] gap-[90px] ">
-      <h1 className="section-title autoDisplay text-[40px] font-bold">
+    <section className="my-projects relative flex flex-col mx-auto items-center w-full sm:w-[80%] mt-[300px] gap-[120px] px-4 sm:px-0">
+      <h1 className="section-title text-[32px] sm:text-[40px] font-bold text-center">
         My Projects 👨‍💻
       </h1>
 
       {cardData.map((card, index) => (
         <div
           key={index}
-          className="project-card flex flex-col  sm:flex-row items-center  justify-center w-full  gap-[30px] sm:gap-[10%] "
+          className="project-card flex flex-col sm:flex-row items-center justify-center w-full gap-[30px] sm:gap-[10%] "
         >
           {/* Video Box */}
-          <div className="project-vidbox autoBlur relative flex justify-center items-center min-w-[400px] w-[40%] cursor-pointer mix-blend-exclusion transition duration-500">
+          <div className="project-vidbox autoBlur  rounded-[20px] shadow-[0_0_10px_lightgray] hover:shadow-[0_0_20px_lightgray] transition duration-500 relative w-full sm:w-[500px] h-[310px] sm:h-[300px] flex justify-center items-center cursor-pointer mix-blend-exclusion">
             <video
               ref={(el) => {
                 videoRefs.current[index] = el!;
@@ -48,24 +48,24 @@ const MyProjects: React.FC = () => {
               playsInline
               onMouseEnter={() => handleVideoHover(index, "enter")}
               onMouseLeave={() => handleVideoHover(index, "leave")}
-              className="w-80 h-60 sm:w-full sm:h-[320px] object-cover rounded-[20px] shadow-[0_0_10px_lightgray] hover:shadow-[0_0_20px_lightgray] transition duration-500"
+              className="object-cover w-full h-full rounded-[20px] "
             />
             <div
               ref={(el) => {
                 hoverSignRefs.current[index] = el!;
               }}
-              className="hover-sign absolute flex justify-center items-center w-[30%] h-[100px]"
+              className="hover-sign flex justify-center items-center w-[30%] h-[100px]"
             ></div>
           </div>
 
           {/* Info Box */}
           <div className="project-info fadeInRight flex flex-col items-start justify-center w-full sm:w-[50%] sm:pl-[10%]">
-            <h1 className="text-[25px] font-bold w-[90%] mb-[10px] max-w-[450px] text-nowrap">
+            <h1 className="text-[20px] sm:text-[25px] font-bold w-full sm:w-[90%] mb-[10px] max-w-[450px] text-nowrap">
               {card.titleSection1}
               <span className="gradient"> {card.titleSection2} </span>
               {card.titleSection3}
             </h1>
-            <p className="w-[90%] max-w-[400px] min-w-[300px] mb-[50px]">
+            <p className="w-full sm:w-[90%] max-w-[400px] min-w-[300px] mb-[50px] text-[14px] sm:text-[16px] leading-relaxed">
               {card.description}
             </p>
             <a
