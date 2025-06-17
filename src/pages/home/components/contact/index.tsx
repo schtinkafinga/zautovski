@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="contact-section flex flex-col border items-center   w-[80%] h-[100vh] justify-evenly   sm:items-center relative pb-20 mt-30 ">
+    <div className="contact-section flex flex-col items-center   w-[80%] h-[100vh] justify-evenly   sm:items-center relative pb-20 mt-30 ">
       <div className=" mb-20 sm:mb-0">
         <h1 className="section-title autoDisplay text-[40px]  ">
           Contact Me 🤙
