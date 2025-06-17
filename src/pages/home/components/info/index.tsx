@@ -38,7 +38,7 @@ const Info: React.FC = () => {
                 <video
                   poster="/images/glob2.png"
                   preload="auto"
-                  className=" w-full mx-auto sm:w-[80%] h-[40%] xl:h-[50%] mt-10 mix-blend-lighten "
+                  className=" w-full mx-auto sm:w-[80%] h-[50%]  xl:h-[50%] mt-10 mix-blend-lighten "
                   src={card.video}
                   autoPlay
                   loop
@@ -66,7 +66,7 @@ const Info: React.FC = () => {
               </p>
 
               {isThirdCard && (
-                <button className=" flex border xl:mt-6 items-center ml-4 mb-4 sm:mb-0 gap-1 py-[5px] px-[15px] text-white  border-[#727fdeb4] bg-[#2200493d] rounded-[10px] shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86] hover:opacity-[0.7]">
+                <button className=" flex border mt-4 xl:mt-8 items-center ml-4  gap-1  py-[5px] px-[15px] text-white  border-[#727fdeb4] bg-[#2200493d] rounded-[10px] shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86] hover:opacity-[0.7]">
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
                     className="w-[12px] h-[12px]"

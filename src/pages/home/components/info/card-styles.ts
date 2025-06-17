@@ -6,7 +6,7 @@ export const cardVariants = cva(
   {
     variants: {
       isThirdCard: {
-        true: "col-span-2 sm:col-span-1 row-span-2 h-[83vh] ",
+        true: "row-span-2 col-span-2 sm:col-span-1 h-auto ",
       },
       isFourthCard: {
         true: "col-span-2 ",
@@ -21,7 +21,7 @@ export const cardTitleVariants = cva(
   {
     variants: {
       isThirdCard: {
-        true: " pt-15 sm:pt-20 lg:pt-0 xl:pt-15",
+        true: " ",
       },
       isFourthCard: {
         true: "",
