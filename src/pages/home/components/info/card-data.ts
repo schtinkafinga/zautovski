@@ -15,7 +15,7 @@ export const cardInfo = [
     title: "I'm very flexible with time zone communications & locations",
     description: "I'm based in Tbilisi, But open to remote work worldwide.",
 
-    video: "videos/glob.mp4",
+    video: "videos/glob2.mp4",
   },
   {
     title: "My Passion for Coding",

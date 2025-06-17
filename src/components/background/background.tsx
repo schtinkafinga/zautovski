@@ -7,7 +7,7 @@ const Background: React.FC = () => {
       autoPlay
       muted
       playsInline
-      src="videos/galaxy.mp4"
+      src="videos/galaxy2.mp4"
       className="fixed right-0 bottom-0 w-full h-full object-cover z-[-1] mix-blend-lighten "
     ></video>
   );

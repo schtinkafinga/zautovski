@@ -5,7 +5,7 @@ export const cardData = [
     titleSection3: "Experiences",
     description: `ArtOa.io - where walls create experiences.
 Upload an order, create unique wall designs in seconds with AI/AR assistance, receive artists' offers and evaluate based on portfolio and experience`,
-    video: "videos/project1.mp4",
+    video: "videos/project1.2.mp4",
     link: "https://artoa.io",
   },
   {
@@ -23,7 +23,7 @@ Upload an order, create unique wall designs in seconds with AI/AR assistance, re
     titleSection3: "Website",
     description:
       "My Portfolio – a showcase of creativity and code. Explore modern UI design, responsive layouts, and full-stack projects built with React, Tailwind, and cutting-edge tools. Each project reflects my passion for user experience and clean development.",
-    video: "videos/project3.mp4",
+    video: "videos/project3.2.mp4",
     link: "https://github.com/",
   },
 ];

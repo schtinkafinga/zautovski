@@ -23,14 +23,14 @@ const Skills: React.FC = () => {
       </h1>
 
       <div className="skills-box h-[90vh] relative flex items-start justify-center">
-        <img
-          className="w-[70%] mix-blend-lighten opacity-70  "
-          src="images/digital brain (2).png"
-          alt="skills-image"
-        />
+          <img
+            className="w-[55%] mix-blend-lighten opacity-70  mt-10"
+            src="images/digital brain.png"
+            alt="skills-image"
+          />
 
         {/* Designer Section */}
-        <div className="designer autoDisplay gap-10 absolute top-[25%] sm:top-[25%] sm:left-[5%] max-w-[300px] flex flex-col items-start">
+        <div className="designer autoDisplay gap-10 absolute top-[35%] sm:top-[25%] sm:left-[-15%] max-w-[300px] flex flex-col items-start">
           <h1 className="gradient text-[32px] sm:text-[50px] flex items-center gap-3">
             Designer
             <LaptopMinimal className="w-12 h-12 relative top-[3px]" />
@@ -45,7 +45,7 @@ const Skills: React.FC = () => {
         </div>
 
         {/* Coder Section */}
-        <div className="coder autoDisplay gap-10 absolute top-[65%] sm:top-[25%] sm:right-[5%] max-w-[300px] flex flex-col items-start">
+        <div className="coder autoDisplay gap-10 absolute top-[70%] sm:top-[25%] sm:right-[-15%] max-w-[300px] flex flex-col items-start">
           <h1 className="gradient text-[32px] sm:text-[50px] flex items-center gap-3">
             Coder
             <FontAwesomeIcon

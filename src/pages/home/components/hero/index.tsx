@@ -34,12 +34,19 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Hero Video */}
-      <div className="hero-vid-box absolute right-0 bottom-[48%] sm:bottom-[16%] pl-4 sm:pl-0">
-        <img
+      <div className="hero-vid-box absolute right-0 bottom-[48%] sm:bottom-[24%] pl-4 sm:pl-0 ">
+        {/* <img
           src="videos/animation.webp"
           alt="animation"
           className="autoBlur max-h-[900px] mix-blend-lighten"
-        />
+        /> */}
+        <video
+          loop
+          autoPlay
+          muted
+          src="videos/hero-video3.mp4"
+          className="autoBlur max-h-[900px] mix-blend-lighten "
+        ></video>
       </div>
 
       {/* Scroll Indicator */}
