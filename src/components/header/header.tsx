@@ -24,7 +24,7 @@ const socialLinks = [
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 left-0 right-0 z-[999] w-full h-[70px] px-[30px] bg-[rgba(255,255,255,0.113)] backdrop-blur-[10px] shadow-[0_0_15px_#72a1de68] flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-[999] w-full h-[70px] px-[30px] bg-[rgba(255,255,255,0.113)] backdrop-blur-[10px] shadow-[0_0_15px_#72a1de68] flex items-center justify-between">
       {/* Logo + Name */}
       <div className="flex items-center h-full">
         <img

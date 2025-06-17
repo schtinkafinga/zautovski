@@ -9,9 +9,9 @@ import "./hero-styles.css";
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero relative w-full h-[100vh] flex ">
+    <section className="hero  w-full h-[100vh] flex border">
       {/* Hero Info */}
-      <div className="hero-info autoBlur absolute bottom-[2%] left-[9%] md:bottom-[45%] md:left-[5%]">
+      <div className="hero-info autoBlur  bottom-[2%] left-[9%] md:bottom-[45%] md:left-[5%]">
         <div className="hero-info-title w-[250px] flex items-center justify-center gap-1 rounded-[50px] border border-[#727fde77] bg-[#2200493d] py-2 px-2 text-[#727fde] shadow-[0_0_5px_#727fde88]">
           <FontAwesomeIcon icon={faSketch} />
           Front-end Developer Portfolio
@@ -34,12 +34,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Hero Video */}
-      <div className="hero-vid-box absolute right-0 bottom-[48%] sm:bottom-[24%] pl-4 sm:pl-0 ">
-        {/* <img
-          src="videos/animation.webp"
-          alt="animation"
-          className="autoBlur max-h-[900px] mix-blend-lighten"
-        /> */}
+      <div className="hero-vid-box  right-0 bottom-[48%] sm:bottom-[24%] pl-4 sm:pl-0 ">
         <video
           loop
           autoPlay
@@ -50,11 +45,11 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="scroll-down absolute left-[58%] sm:left-[49%] bottom-[2.2%] sm:bottom-[28%] h-[50px] w-[30px] rounded-[50px] border-2 border-[lightgray] shadow-[0_0_15px_rgba(211,211,211,0.477)] cursor-pointer">
+      <div className="scroll-down  left-[58%] sm:left-[49%] bottom-[2.2%] sm:bottom-[28%] h-[50px] w-[30px] rounded-[50px] border-2 border-[lightgray] shadow-[0_0_15px_rgba(211,211,211,0.477)] cursor-pointer">
         <Lottie
           animationData={animationScroll}
           loop
-          className="absolute top-[-12px] left-[-22px] w-[70px] h-[70px]"
+          className=" top-[-12px] left-[-22px] w-[70px] h-[70px]"
         />
       </div>
     </section>

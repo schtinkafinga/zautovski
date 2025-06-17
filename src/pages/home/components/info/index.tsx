@@ -38,7 +38,7 @@ const Info: React.FC = () => {
                 <video
                   poster="/images/glob2.png"
                   preload="auto"
-                  className="mt-[10%] w-full sm:w-[70%] h-[50%] object-cover mix-blend-lighten "
+                  className="mt-[10%] w-full sm:w-[80%] h-[50%] object-cover mix-blend-lighten "
                   src={card.video}
                   autoPlay
                   loop

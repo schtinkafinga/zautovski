@@ -6,10 +6,10 @@ import { Outlet } from "react-router-dom";
 
 const DefaultLayout: React.FC = () => {
   return (
-    <div className="Container z-[22]  relative bg-black w-[100%] h-auto flex flex-col items-center justify-center gap-[100px] bg-[#001f7c38]">
+    <div className="Container  p-0 m-0   relative bg-[#001f7c29]  z-[-1] w-full mx-auto h-auto ">
       <Background />
-      <BlackHole />
       <Header />
+      <BlackHole />
       <Outlet />
     </div>
   );

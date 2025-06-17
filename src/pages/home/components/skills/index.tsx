@@ -23,11 +23,11 @@ const Skills: React.FC = () => {
       </h1>
 
       <div className="skills-box h-[90vh] relative flex items-start justify-center">
-          <img
-            className="w-[55%] mix-blend-lighten opacity-70  mt-10"
-            src="images/digital brain.png"
-            alt="skills-image"
-          />
+        <img
+          className="w-[55%] mix-blend-lighten opacity-70  mt-10"
+          src="images/digital brain.png"
+          alt="skills-image"
+        />
 
         {/* Designer Section */}
         <div className="designer autoDisplay gap-10 absolute top-[35%] sm:top-[25%] sm:left-[-15%] max-w-[300px] flex flex-col items-start">
