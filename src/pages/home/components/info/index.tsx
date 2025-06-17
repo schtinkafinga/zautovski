@@ -10,7 +10,7 @@ import {
 
 const Info: React.FC = () => {
   return (
-    <section className="info-section flex flex-col items-center w-[80%] mt-[100px]">
+    <section className="info-section flex flex-col items-center w-[80%] mt-[150px] mx-auto ">
       <h1 className="section-title autoDisplay text-[40px] font-bold">
         Hello, There 👋
       </h1>
@@ -30,7 +30,7 @@ const Info: React.FC = () => {
                 <img
                   src={card.image}
                   alt="card-image"
-                  className="w-[60%] h-[50%] object-cover"
+                  className="w-[60%]  h-[50%] object-cover mx-auto"
                 />
               )}
 
@@ -38,7 +38,7 @@ const Info: React.FC = () => {
                 <video
                   poster="/images/glob2.png"
                   preload="auto"
-                  className="mt-[10%] w-full sm:w-[80%] h-[50%] object-cover mix-blend-lighten "
+                  className=" w-full mx-auto sm:w-[80%] h-[40%] xl:h-[50%] mt-10 mix-blend-lighten "
                   src={card.video}
                   autoPlay
                   loop
@@ -66,7 +66,7 @@ const Info: React.FC = () => {
               </p>
 
               {isThirdCard && (
-                <button className="absolute bottom-[5%] left-[5%] flex items-center gap-1 py-[5px] px-[15px] text-white border border-[#727fdeb4] bg-[#2200493d] rounded-[10px] shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86] hover:opacity-[0.7]">
+                <button className=" flex border xl:mt-6 items-center ml-4 mb-4 sm:mb-0 gap-1 py-[5px] px-[15px] text-white  border-[#727fdeb4] bg-[#2200493d] rounded-[10px] shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86] hover:opacity-[0.7]">
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
                     className="w-[12px] h-[12px]"

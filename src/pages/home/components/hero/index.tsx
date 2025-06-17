@@ -17,7 +17,6 @@ const Hero: React.FC = () => {
           <FontAwesomeIcon icon={faSketch} />
           Front-end Developer Portfolio
         </div>
-
         {/* Main Heading */}
         <h1 className="mt-5 mb-[30px] text-[40px] sm:text-[50px] md:text-[30px] lg:text-[40px] xl:text-[60px] font-bold lg:leading-[70px] max-w-[600px]">
           Providing <span className="gradient">the best</span> Project{" "}
@@ -38,11 +37,11 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="h-full hidden lg:flex justify-center items-end w-1/2">
+      <div className="h-full hidden pr-20  lg:flex justify-center items-end w-1/2">
         <Lottie
           animationData={animationScroll}
           loop
-          className="scroll-down h-[50px] w-[30px] rounded-[50px] border-2 border-[lightgray] shadow-[0_0_15px_rgba(211,211,211,0.477)] cursor-pointer"
+          className="scroll-down h-[60px] w-[40px]  rounded-[50px] border-2 border-[lightgray] shadow-[0_0_15px_rgba(211,211,211,0.477)] cursor-pointer"
         />
       </div>
 
