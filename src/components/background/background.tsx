@@ -4,11 +4,11 @@ const Background: React.FC = () => {
   return (
     <video
       poster="/images/galaxy.png"
+      preload="auto"
       loop
       autoPlay
       muted
       playsInline
-      preload="auto"
       src="/videos/galaxy2.mp4"
       className="fixed z-[-1] w-full right-0 bottom-0  object-cover "
     ></video>

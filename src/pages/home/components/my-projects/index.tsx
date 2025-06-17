@@ -40,6 +40,8 @@ const MyProjects: React.FC = () => {
               ref={(el) => {
                 videoRefs.current[index] = el!;
               }}
+              poster={card.img}
+              preload="auto"
               src={card.video}
               loop
               muted

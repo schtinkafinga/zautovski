@@ -36,7 +36,9 @@ const Info: React.FC = () => {
 
               {card.video && (
                 <video
-                  className="mt-[10%] w-full sm:w-[70%] h-[50%] object-cover mix-blend-lighten"
+                  poster="/images/glob2.png"
+                  preload="auto"
+                  className="mt-[10%] w-full sm:w-[70%] h-[50%] object-cover mix-blend-lighten "
                   src={card.video}
                   autoPlay
                   loop
