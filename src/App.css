@@ -45,12 +45,11 @@ body {
 
 /*Auto Blur Animation*/
 @media (min-width: 700px) {
-.autoBlur {
-  animation: autoBlurAnimation linear both;
-  animation-timeline: view();
+  .autoBlur {
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+  }
 }
-}
-
 
 @keyframes autoBlurAnimation {
   0% {

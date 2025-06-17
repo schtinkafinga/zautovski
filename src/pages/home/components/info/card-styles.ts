@@ -12,7 +12,7 @@ export const cardVariants = cva(
         true: "col-span-2",
       },
     },
-  }
+  },
 );
 
 // Title Text (h1)
@@ -30,7 +30,7 @@ export const cardTitleVariants = cva(
         true: "bottom-[48%] sm:bottom-[40%]",
       },
     },
-  }
+  },
 );
 
 // Description Text (p)
@@ -45,5 +45,5 @@ export const cardDescriptionVariants = cva(
         true: "max-w-[650px]",
       },
     },
-  }
+  },
 );
