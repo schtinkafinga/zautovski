@@ -17,64 +17,63 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <div className="skills-section flex flex-col items-center relative w-full sm:mt-40">
-      <h1 className="section-title autoDisplay text-[40px] font-bold">
+    <div className="skills-section flex flex-col items-center w-full mt-20 sm:mt-32 px-4 sm:px-8">
+      <h1 className="section-title autoDisplay text-3xl sm:text-4xl font-bold mb-16 text-center">
         My Skills 💪
       </h1>
 
-      <div className="skills-box h-[90vh] relative flex items-start justify-center">
-        <img
-          className="w-[55%] mix-blend-lighten opacity-70  mt-10"
-          src="images/digital brain.png"
-          alt="skills-image"
-        />
-
+      <div className="skills-box  flex flex-col lg:flex-row items-center   justify-center gap-12 lg:gap-6 w-full max-w-8xl">
         {/* Designer Section */}
-        <div className="designer autoDisplay gap-10 absolute top-[35%] sm:top-[25%] sm:left-[-15%] max-w-[300px] flex flex-col items-start">
-          <h1 className="gradient text-[32px] sm:text-[50px] flex items-center gap-3">
+        <div className="max-w-sm   flex flex-col items-start gap-4 text-left h-full min-h-60">
+          <h2 className="gradient text-2xl sm:text-4xl flex items-center gap-2">
             Designer
-            <LaptopMinimal className="w-12 h-12 relative top-[3px]" />
-          </h1>
-          <p className="text-sm sm:text-base leading-[23px]">
+            <LaptopMinimal className="w-8 h-8 sm:w-10 sm:h-10" />
+          </h2>
+          <p className="text-sm sm:text-base leading-relaxed">
             I have expertise in HTML, CSS, and JavaScript, along with modern UI
-            libraries and frameworks such as Tailwind CSS, Bootstrap, ShadCN UI,
-            and Ant Design. I also use design tools like Figma to bring ideas to
-            life. My strength lies in blending aesthetics with functionality to
-            craft seamless and responsive user experiences.
+            libraries and frameworks like Tailwind CSS, Bootstrap, ShadCN UI, and
+            Ant Design. I also use Figma to bring ideas to life. My strength lies
+            in blending aesthetics with functionality to craft seamless and
+            responsive user experiences.
           </p>
         </div>
 
+        {/* Center Image */}
+        <div className="w-full  max-w-md lg:max-w-lg xl:max-w-xl h-auto transition-all duration-300">
+          <img
+            src="images/digital brain.png"
+            alt="skills"
+            className="w-full h-auto object-contain opacity-80 mix-blend-lighten"
+          />
+        </div>
+
         {/* Coder Section */}
-        <div className="coder autoDisplay gap-10 absolute top-[70%] sm:top-[25%] sm:right-[-15%] max-w-[300px] flex flex-col items-start">
-          <h1 className="gradient text-[32px] sm:text-[50px] flex items-center gap-3">
+        <div className="max-w-sm  flex flex-col items-start gap-4 text-left h-full min-h-60">
+          <h2 className="gradient text-2xl sm:text-4xl flex items-center gap-2">
             Coder
-            <FontAwesomeIcon
-              icon={faCode}
-              className="w-12 h-12 relative top-[3px]"
-            />
-          </h1>
-          <p className="text-sm sm:text-base leading-[23px]">
-            I have strong expertise in React, and working proficiency with
-            Angular, Next.js, and React Native. On the backend, I have a basic
-            understanding of PHP and Express.js. I’m also proficient in working
-            with databases — I have intermediate-level experience with SQL
-            (including MySQL), and basic knowledge of MongoDB.
+            <FontAwesomeIcon icon={faCode} className="w-8 h-8 sm:w-10 sm:h-10" />
+          </h2>
+          <p className="text-sm sm:text-base leading-relaxed">
+            I have strong expertise in React, with working proficiency in
+            Angular, Next.js, and React Native. On the backend, I’m familiar with
+            PHP and Express.js. I'm also skilled with SQL (MySQL) and have a
+            foundational understanding of MongoDB.
           </p>
         </div>
       </div>
 
       {/* Tech Icons Slider */}
-      <div className="slider w-[300px] sm:w-[800px]  h-[120px] overflow-hidden mt-[105px] sm:mt-[20px]">
-        <div className="list slider-track flex w-max animate-marquee h-[120px] gap-6">
+      <div className="slider w-full max-w-6xl overflow-hidden mt-24 ">
+        <div className="slider-track flex animate-marquee gap-6 h-[100px] ">
           {[...items, ...items].map((item, index) => (
             <div
               key={index}
-              className="item w-[110px] h-[110px] flex-shrink-0 flex items-center justify-center"
+              className="item w-[100px] h-[100px]  flex-shrink-0 flex items-center justify-center"
             >
               <img
                 src={item}
-                alt={`slide-${index}`}
-                className="w-[100px] h-[100px] object-contain"
+                alt={`skill-icon-${index}`}
+                className="w-[80px] h-[80px] object-contain"
               />
             </div>
           ))}

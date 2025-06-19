@@ -22,12 +22,13 @@ const MyProjects: React.FC = () => {
       hoverSign.classList.remove("active");
     }
   };
-  
+
 
 
   return (
-    <section className="my-projects relative flex flex-col mx-auto items-center w-full sm:w-[80%] mt-[300px] gap-[120px] px-4 sm:px-0">
-      <h1 className="section-title text-[32px] sm:text-[40px] font-bold text-center">
+    <section className="my-projects relative flex flex-col mx-auto items-center w-full sm:w-[80%] mt-40 lg:mt-60 gap-[60px] px-4 sm:px-0">
+      <h1 className="section-title autoDisplay text-3xl sm:text-4xl font-bold mb-16 text-center">
+               
         My Projects 👨‍💻
       </h1>
 
