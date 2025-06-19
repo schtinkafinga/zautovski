@@ -62,7 +62,7 @@ const Header: React.FC = () => {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-[30px] h-[30px] flex items-center  justify-center rounded-full border-2 border-[#727fde] text-[20px] no-underline transition duration-300 hover:bg-[#727fde] hover:text-black shadow-[0_0_15px_#727fde6f]"
+            className=" w-[30px] h-[30px] flex items-center  justify-center rounded-md border-2 border-[#727fde] text-[20px] no-underline transition duration-300 hover:bg-[#727fde] hover:text-black shadow-[0_0_15px_#727fde6f]"
           >
             <FontAwesomeIcon icon={icon} className="w-4" />
           </a>
