@@ -2,7 +2,7 @@ import React from "react";
 
 const BlackHole: React.FC = () => {
   return (
-    <div className="blackhole-box  w-full  flex justify-center  mix-blend-lighten   ">
+    <div className="blackhole-box  w-full  flex justify-center  mix-blend-lighten  ">
       <video
         poster="/images/blackhole.png"
         preload="auto"

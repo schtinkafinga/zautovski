@@ -10,7 +10,7 @@ const Background: React.FC = () => {
       muted
       playsInline
       src="/videos/galaxy2.mp4"
-      className="fixed top-0 left-0 w-full h-full object-cover  mix-blend-lighten "
+      className="fixed top-0 left-0 w-full h-full object-cover   z-[-1]"
     ></video>
   );
 };

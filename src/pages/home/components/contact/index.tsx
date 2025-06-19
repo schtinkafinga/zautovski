@@ -132,7 +132,7 @@ const Contact: React.FC = () => {
                 <textarea
                   {...field}
                   placeholder="Share your thoughts"
-                  className="py-[7.5px] px-[30px] text-black bg-gray-300 w-full h-[100px] border-none outline-none rounded-[10px] resize-none"
+                  className="py-[7.5px] px-[30px] text-black bg-gray-300 w-full h-[100px] border-none outline-none rounded-tr-[10px] rounded-br-[10px] resize-none"
                 />
               )}
             />
