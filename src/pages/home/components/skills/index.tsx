@@ -17,7 +17,7 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <div className="skills-section flex flex-col items-center w-full mt-20 sm:mt-32 px-4 sm:px-8">
+    <div id="Skills" className="skills-section flex flex-col items-center w-full mt-20 sm:mt-32 px-4 sm:px-8">
       <h1 className="section-title autoDisplay text-3xl sm:text-4xl font-bold mb-16 text-center">
         My Skills 💪
       </h1>

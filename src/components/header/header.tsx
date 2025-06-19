@@ -11,6 +11,7 @@ const socialLinks = [
   {
     href: "https://github.com/giozauta",
     icon: faSquareGithub,
+  
   },
   {
     href: "https://www.linkedin.com/in/giorgi-zautashvili-9779a7215",
@@ -23,6 +24,14 @@ const socialLinks = [
 ];
 
 const Header: React.FC = () => {
+
+  const handleScroll = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-[999] w-full h-[70px] px-[30px] bg-[rgba(255,255,255,0.113)] backdrop-blur-[10px] shadow-[0_0_15px_#72a1de68]  flex items-center justify-between">
       {/* Logo + Name */}
@@ -39,14 +48,14 @@ const Header: React.FC = () => {
 
       {/* Navigation Links */}
       <ul className="hidden md:flex items-center justify-between bg-[rgba(0,0,69,0.30)] backdrop-blur-[10px] shadow-[0_0_10px_#727fde65] rounded-[10px] py-[15px] px-[15px] lg:w-[30%]">
-        {["About", "Skills", "Projects"].map((label, index) => (
+        {["About",  "Projects","Skills",].map((label, index) => (
           <li key={index}>
-            <Link
-              to="#"
-              className="mx-[10px] font-bold text-white no-underline"
+            <button
+            onClick={()=>handleScroll(label)}
+              className="mx-[10px] font-bold text-white no-underline cursor-pointer"
             >
               {label}
-            </Link>
+            </button>
           </li>
         ))}
       </ul>

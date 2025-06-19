@@ -6,6 +6,9 @@ import Info from "./components/info";
 import Contact from "./components/contact";
 
 const Home: React.FC = () => {
+
+
+
   return (
     <>
       <Hero />
