@@ -9,7 +9,7 @@ import "./hero-styles.css";
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero h-auto lg:h-[667px] relative top-[-40px] w-full flex justify-center items-center flex-col-reverse lg:flex-row">
+    <section className="hero h-auto lg:max-h-[667px] relative top-[-40px]  w-full flex flex-col-reverse lg:flex-row">
       {/* Hero Info */}
       <div className="hero-info autoBlur h-full flex flex-col items-start justify-start lg:pt-20 w-full px-7 md:pl-20 lg:px-0 lg:pl-10 xl:pl-30 ">
         {/* Hero Title */}
@@ -30,14 +30,14 @@ const Hero: React.FC = () => {
         </p>
 
         {/* Contact Button */}
-        <button className="flex items-center justify-center gap-2 rounded-[10px] border-[#727fdeb4] bg-[#2200493d] px-[35px] py-[15px] text-white shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86]">
+        <button className="flex items-center border justify-center gap-2 rounded-[10px] border-[#727fdeb4] bg-[#2200493d] px-[35px] py-[15px] text-white shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86]">
           <SendHorizontal className="w-4 h-4" />
           Contact Me
         </button>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="h-full hidden pr-20  lg:flex justify-center items-end w-1/2">
+      <div className=" hidden pr-20  lg:flex justify-center items-end w-1/2 ">
         <Lottie
           animationData={animationScroll}
           loop
@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Hero Video */}
-      <div className="hero-vid-box h-full w-full flex justify-center items-center my-10 sm:my-0">
+      <div className="hero-vid-box   w-full flex justify-center items-center my-10 sm:my-0">
         <video
           loop
           autoPlay
