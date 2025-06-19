@@ -9,6 +9,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SendHorizontal } from "lucide-react";
 import React from "react";
 import { useForm, Controller } from "react-hook-form";
+import emailjs from "emailjs-com";
+import { Toaster, toast } from 'sonner';
+
 
 type FormValues = {
   name: string;
@@ -17,7 +20,7 @@ type FormValues = {
 };
 
 const Contact: React.FC = () => {
-  const { handleSubmit, control } = useForm<FormValues>({
+  const { handleSubmit, control, reset } = useForm<FormValues>({
     defaultValues: {
       name: "",
       email: "",
@@ -25,12 +28,36 @@ const Contact: React.FC = () => {
     },
   });
 
+
   const onSubmit = (data: FormValues) => {
-    console.log(data);
+    emailjs
+      .send(
+        "service_48whlcv",
+        "template_5d0mbof",
+        {
+          name: data.name,
+          email: data.email,               // ✅ now this is used
+          message: data.message,
+          time: new Date().toLocaleString(),
+        },
+        "aXkjPsgTrdwGVvH02"
+      )
+      .then((result) => {
+        console.log("Email sent", result.text);
+        toast("Message sent!");
+        reset()
+      })
+      .catch((error) => {
+        console.error("Error sending email", error.text);
+        toast("Error sending message.");
+      });
   };
+
 
   return (
     <div className="contact-section flex flex-col items-center w-full px-4 sm:px-8 max-w-7xl mx-auto pt-40 sm:pt-40 pb-10 md:pb-40  gap-15  ">
+      <Toaster />
+
       <div className="">
         <h1 className="section-title autoDisplay text-3xl sm:text-4xl font-bold  text-center">
           Contact Me 🤙
@@ -71,13 +98,13 @@ const Contact: React.FC = () => {
           </a>
 
           <div className="social-icons autoBlur flex gap-5 mt-[40px] ">
-            <a href="#">
+            <a href="https://www.facebook.com/zautagio/" target="_blank">
               <FontAwesomeIcon
                 icon={faSquareFacebook}
                 className="text-white text-[30px]"
               />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/zautashviligiorgi/" target="_blank">
               <FontAwesomeIcon
                 icon={faSquareInstagram}
                 className="text-white text-[30px]"

@@ -9,6 +9,11 @@ import {
 } from "./card-styles";
 
 const Info: React.FC = () => {
+
+  const handleContactClick = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+
+  }
   return (
     <section className="info-section flex flex-col items-center w-[80%] mt-[150px] mx-auto ">
       <h1 className="section-title autoDisplay text-3xl sm:text-4xl font-bold mb-16 text-center">
@@ -66,7 +71,7 @@ const Info: React.FC = () => {
               </p>
 
               {isThirdCard && (
-                <button className=" flex border mt-4 xl:mt-8 items-center ml-4  gap-1  py-[5px] px-[15px] text-white  border-[#727fdeb4] bg-[#2200493d] rounded-[10px] shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86] hover:opacity-[0.7]">
+                <button onClick={handleContactClick} className=" flex border mt-4 xl:mt-8 items-center ml-4  gap-1  py-[5px] px-[15px] text-white  border-[#727fdeb4] bg-[#2200493d] rounded-[10px] shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86] hover:opacity-[0.7]">
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
                     className="w-[12px] h-[12px]"

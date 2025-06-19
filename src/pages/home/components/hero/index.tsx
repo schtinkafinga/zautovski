@@ -8,6 +8,12 @@ import animationScroll from "@/assets/animations/Scroll-Animation - 174949592744
 import "./hero-styles.css";
 
 const Hero: React.FC = () => {
+
+  const handleContactClick = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+
+  }
+
   return (
     <section className="hero h-auto lg:max-h-[667px] relative top-[-40px]  w-full flex flex-col-reverse lg:flex-row">
       {/* Hero Info */}
@@ -30,7 +36,7 @@ const Hero: React.FC = () => {
         </p>
 
         {/* Contact Button */}
-        <button className="flex items-center border justify-center gap-2 rounded-[10px] border-[#727fdeb4] bg-[#2200493d] px-[35px] py-[15px] text-white shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86]">
+        <button onClick={handleContactClick} className="flex items-center border justify-center gap-2 rounded-[10px] border-[#727fdeb4] bg-[#2200493d] px-[35px] py-[15px] text-white shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86]">
           <SendHorizontal className="w-4 h-4" />
           Contact Me
         </button>
