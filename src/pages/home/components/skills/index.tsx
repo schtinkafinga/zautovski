@@ -63,7 +63,7 @@ const Skills: React.FC = () => {
       </div>
 
       {/* Tech Icons Slider */}
-      <div className="slider w-full max-w-6xl overflow-hidden mt-24 ">
+      <div className="slider w-full max-w-6xl overflow-hidden mt-0 sm:mt-15 lg:mt-24 ">
         <div className="slider-track flex animate-marquee gap-6 h-[100px] ">
           {[...items, ...items].map((item, index) => (
             <div

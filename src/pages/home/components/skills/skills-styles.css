@@ -2,11 +2,11 @@
   0% {
     transform: translateX(0);
   }
-
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
+
 
 .animate-marquee {
   animation: marquee 15s linear infinite;
@@ -16,4 +16,10 @@
   overflow: hidden;
   mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
   opacity: 0.8;
+}
+
+@media (max-width: 640px) {
+  .animate-marquee {
+    animation-duration: 6s;
+  }
 }
