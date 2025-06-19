@@ -24,7 +24,7 @@ const Skills: React.FC = () => {
 
       <div className="skills-box  flex flex-col lg:flex-row items-center   justify-center gap-12 lg:gap-6 w-full max-w-8xl">
         {/* Designer Section */}
-        <div className="max-w-sm   flex flex-col items-start gap-4 text-left h-full min-h-60">
+        <div className="max-w-sm   flex flex-col items-start gap-4 text-left h-full min-h-60 autoDisplay">
           <h2 className="gradient text-2xl sm:text-4xl flex items-center gap-2">
             Designer
             <LaptopMinimal className="w-8 h-8 sm:w-10 sm:h-10" />
@@ -48,7 +48,7 @@ const Skills: React.FC = () => {
         </div>
 
         {/* Coder Section */}
-        <div className="max-w-sm  flex flex-col items-start gap-4 text-left h-full min-h-60">
+        <div className="max-w-sm  flex flex-col items-start gap-4 text-left h-full min-h-60 autoDisplay">
           <h2 className="gradient text-2xl sm:text-4xl flex items-center gap-2">
             Coder
             <FontAwesomeIcon icon={faCode} className="w-8 h-8 sm:w-10 sm:h-10" />
