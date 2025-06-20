@@ -1,7 +1,6 @@
 import React from "react";
 import { faSketch } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FileUser, SendHorizontal } from "lucide-react";
 import Lottie from "lottie-react";
 
 import animationScroll from "@/assets/animations/Scroll-Animation - 1749495927443.json";
@@ -37,8 +36,8 @@ const Hero: React.FC = () => {
           href="/files/giorgi_cv.pdf"
           download
           className="flex  items-center border justify-center gap-4 rounded-[10px] border-[#727fdeb4] bg-[#2200493d] px-[20px] py-[15px] text-white shadow-[0_0_5px_#727fde86] transition duration-300 hover:shadow-[0_0_15px_#727fde86]"
-        >           <img src="/images/cv2.png" className="w-6 h-6" alt="cv " />
-
+        >
+          <img src="/images/cv2.png" className="w-6 h-6" alt="cv " />
           Look at my CV
 
         </a>

@@ -87,7 +87,8 @@ const Contact: React.FC = () => {
             giozautaa@gmail.com
           </a>
           <a
-            href="#"
+            target="_blank"
+            href="https://www.linkedin.com/in/giorgi-zautashvili-9779a7215/"
             className="text-gray-300 text-[20px] whitespace-nowrap flex items-center"
           >
             <FontAwesomeIcon
