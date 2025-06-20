@@ -2,7 +2,6 @@ import {
   faLinkedin,
   faSquareFacebook,
   faSquareGithub,
-  faSquareInstagram,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
