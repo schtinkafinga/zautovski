@@ -1,6 +1,7 @@
 import {
   faLinkedin,
   faSquareFacebook,
+  faSquareGithub,
   faSquareInstagram,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
@@ -78,7 +79,7 @@ const Contact: React.FC = () => {
           </a>
           <a
             href="#"
-            className="text-gray-300 text-[20px] whitespace-nowrap  flex items-center"
+            className="text-gray-300 text-[20px] whitespace-nowrap  flex items-center "
           >
             <FontAwesomeIcon
               icon={faTelegram}
@@ -86,30 +87,30 @@ const Contact: React.FC = () => {
             />
             giozautaa@gmail.com
           </a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/giorgi-zautashvili-9779a7215/"
-            className="text-gray-300 text-[20px] whitespace-nowrap flex items-center"
+
+          <a href="https://www.facebook.com/zautagio/" target="_blank" className="text-gray-300 gap-1 text-[20px] whitespace-nowrap  flex items-center"
           >
             <FontAwesomeIcon
-              icon={faLinkedin}
-              className="text-[#7668ff] text-[30px] mr-[10px]"
+              icon={faSquareFacebook}
+              className="text-[#7668ff] text-[30px] mr-[10px] "
             />
-            giorgi-zautashvili-9779a7215
+            giorgi Zautashvili
           </a>
 
           <div className="social-icons autoBlur flex gap-5 mt-[40px] ">
-            <a href="https://www.facebook.com/zautagio/" target="_blank">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/giorgi-zautashvili-9779a7215/"
+            >
               <FontAwesomeIcon
-                icon={faSquareFacebook}
-                className="text-white text-[30px]"
-              />
+                icon={faLinkedin}
+                className="text-white text-[30px]" />
+
             </a>
-            <a href="https://www.instagram.com/zautashviligiorgi/" target="_blank">
-              <FontAwesomeIcon
-                icon={faSquareInstagram}
-                className="text-white text-[30px]"
+            <a href="https://github.com/giozauta" target="_blank">
+              <FontAwesomeIcon icon={faSquareGithub} className="text-white text-[30px]"
               />
+
             </a>
           </div>
         </div>
